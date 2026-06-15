@@ -38,7 +38,7 @@
 
 
 ```
-curl -Lo cert_manager.sh https://raw.githubusercontent.com/ExtremeDot/eXtreme-GreTunnel-With-port-Forwarding/main/gre_port_fw.sh
+curl -Lo gre_port_fw.sh https://raw.githubusercontent.com/ExtremeDot/eXtreme-GreTunnel-With-port-Forwarding/main/gre_port_fw.sh
 
 chmod +x gre_port_fw.sh
 
