@@ -54,6 +54,9 @@ nano gre_port_fw.sh
 کد اسکریپت را داخل آن کپی کرده، فایل را ذخیره کنید (Ctrl+O و سپس Ctrl+X) و دسترسی اجرایی به آن بدهید:
 
 
+[Link Script](https://github.com/ExtremeDot/eXtreme-GreTunnel-With-port-Forwarding/blob/main/gre_port_fw.sh)
+
+
 ```
 chmod +x gre_port_fw.sh
 
