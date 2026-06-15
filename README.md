@@ -38,19 +38,24 @@
 
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/ExtremeDot/eXtreme-GreTunnel-With-port-Forwarding/main/gre_port_fw.sh)
+curl -Lo cert_manager.sh https://raw.githubusercontent.com/ExtremeDot/eXtreme-GreTunnel-With-port-Forwarding/main/gre_port_fw.sh
+
+chmod +x gre_port_fw.sh
+
+sudo ./gre_port_fw.sh
+
 ```
 ### بصورت دستی
 ابتدا وارد سرور خود شده و یک فایل برای اسکریپت بسازید:
 ```bash
-nano tunnel.sh
+nano gre_port_fw.sh
 ```
 
 کد اسکریپت را داخل آن کپی کرده، فایل را ذخیره کنید (Ctrl+O و سپس Ctrl+X) و دسترسی اجرایی به آن بدهید:
 
 
 ```
-chmod +x tunnel.sh
+chmod +x gre_port_fw.sh
 
 ```
 
@@ -64,7 +69,7 @@ chmod +x tunnel.sh
 اسکریپت را با دسترسی روت اجرا کنید:
 
 ```
-sudo ./tunnel.sh
+sudo ./gre_port_fw.sh
 ```
 
 ### مراحل پرسش و پاسخ:
@@ -88,7 +93,7 @@ sudo ./tunnel.sh
 
 
 ```
-sudo ./tunnel.sh
+sudo ./gre_port_fw.sh
 ```
 
 ### مراحل پرسش و پاسخ:
@@ -142,7 +147,7 @@ sudo iptables -t nat -L PREROUTING -n -v
 اگر در اجرای اسکریپت به مشکلی خوردید و خواستید خط به خط دستورات اجرایی لینوکس را ببینید، از فلگ زیر استفاده کنید:
 
 ```
-sudo ./tunnel.sh --debug
+sudo ./gre_port_fw.sh --debug
 ```
 
 💡 نکته: این اسکریپت مشکل قطع شدن اینترنت سرورهایی که گیت‌وی آن‌ها خارج از ساب‌نت اصلی است را با استفاده از تگ onlink در مسیردهی روت‌ها به طور کامل حل می‌کند.
