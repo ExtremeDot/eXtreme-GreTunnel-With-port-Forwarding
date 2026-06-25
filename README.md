@@ -1,7 +1,15 @@
 # 🚀 Automated GRE Tunnel & Port Forwarder
 
+### V3 - 1 IRAN Server - 2x Kharej Server
+```
+curl -Lo gre_port_fw.sh https://raw.githubusercontent.com/ExtremeDot/eXtreme-GreTunnel-With-port-Forwarding/main/gre_port_fw_v3.sh
 
+chmod +x gre_port_fw.sh
 
+sudo ./gre_port_fw.sh
+```
+
+----
 
 این اسکریپت به شما کمک می‌کند تا به سادگی و به صورت کاملاً خودکار، یک تانل امن **GRE** بین دو سرور (ایران و خارج) برقرار کرده و پورت‌های دلخواه خود را از سرور ایران به خارج فوروارد کنید. همچنین این اسکریپت دارای قابلیت **Systemd Service** جهت اجرای خودکار پس از ریبوت (Reboot) سرور و کنترل هوشمند گیت‌وی‌های خارج از رنج (`onlink`) است.
 
